@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Harry Potter Trivia</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="main">
+
+  <div id="background" class="container">
+    <h1>Harry Potter Quiz</h1>
+
+    <button id="enter" type="button" class="btn btn-dark btn-lg">I solemly swear that I am up to no good</button>
+  </div>
+
+  <!-- question 1 -->
+
+  <form id="questions" style="display:none;">
+    <h1>Harry Potter Quiz</h1>
+
+    <div id="show-number"></div>
+
+    <div class="quest">
+      <p class="ask">Which of these is not a Hogwart's House?</p>
+
+      <input type="radio" name="one" value="a">
+      <label>Gryffindor</label>
+
+      <input type="radio" name="one" value="b">
+      <label>Ravenclaw</label>
+
+
+      <input type="radio" name="one" value="c">
+      <label>Hippogriff</label>
+
+      <input type="radio" name="one" value="d">
+      <label>Slytherin</label>
+
+    </div>
+
+
+    <!-- question 2 -->
+
+    <div class="quest">
+      <p class="ask">True or False: According to the prophecy, Harry is considered to be 'The Chosen One'.</p>
+      <input type="radio" name="two" value="a">
+      <label>True</label>
+      <input type="radio" name="two" value="b">
+      <label>False</label>
+    </div>
+
+
+    <!-- question 3 -->
+
+    <div class="quest">
+      <p class="ask">How does a house elf get set free?</p>
+
+      <input type="radio" name="three" value="a">
+      <label>When they manage to run away</label>
+
+      <input type="radio" name="three" value="b">
+      <label>Upon receiving an article of clothing from their master</label>
+
+      <input type="radio" name="three" value="c">
+      <label>By learning how to apparate to the land of the free house elves</label>
+      <br>
+      <input type="radio" name="three" value="d">
+      <label>When their freedom application gets successfully processed</label>
+
+    </div>
+
+
+    <!-- question 4 -->
+
+    <div class="quest">
+      <p class="ask">How does Hermione get to all her classes during her third year at Hogwarts?</p>
+
+      <input type="radio" name="four" value="a">
+      <label>Apparition</label>
+
+      <input type="radio" name="four" value="b">
+      <label>She doesn't</label>
+
+      <input type="radio" name="four" value="c">
+      <label>By re-arranging her packed timetable</label>
+
+      <input type="radio" name="four" value="d">
+      <label>Using a time-turner</label>
+
+    </div>
+
+    <!-- question 5 -->
+
+    <div class="quest">
+      <p class="ask">Which of these is an unforgiveable curse?</p>
+
+      <input type="radio" name="five" value="a">
+      <label>Crucio</label>
+
+      <input type="radio" name="five" value="b">
+      <label>Sectumsempra</label>
+
+      <input type="radio" name="five" value="c">
+      <label>Expelliarmus</label>
+
+      <input type="radio" name="five" value="d">
+      <label>Accio</label>
+
+    </div>
+
+    <!-- question 6 -->
+
+    <div class="quest">
+      <p class="ask">How many points is a snitch worth in Quidditch?</p>
+
+      <input type="radio" name="six" value="a">
+      <label>200</label>
+
+      <input type="radio" name="six" value="b">
+      <label>150</label>
+
+      <input type="radio" name="six" value="c">
+      <label>75</label>
+
+      <input type="radio" name="six" value="d">
+      <label>97</label>
+
+    </div>
+
+    <!-- question 7 -->
+
+    <div class="quest">
+      <p class="ask">Ron's attempt to curse Malfoy backfired, which resulted in him...
+      </p>
+
+      <input type="radio" name="seven" value="a">
+      <label>Setting his own pants on fire</label>
+
+      <input type="radio" name="seven" value="b">
+      <label>Turning Harry into a tea cup</label>
+
+      <input type="radio" name="seven" value="c">
+      <label>Throwing up slugs</label>
+
+      <input type="radio" name="seven" value="d">
+      <label>Losing control of his own legs</label>
+
+    </div>
+
+    <!-- question 8 -->
+
+    <div class="quest">
+      <p class="ask">Harry is fluent in what other language?</p>
+
+      <input type="radio" name="eight" value="a">
+      <label>Troll</label>
+
+      <input type="radio" name="eight" value="b">
+      <label>Mermish</label>
+
+      <input type="radio" name="eight" value="c">
+      <label>Gobbledegook</label>
+
+      <input type="radio" name="eight" value="d">
+      <label>Parseltongue</label>
+
+    </div>
+
+    <!-- question 9 -->
+
+    <div class="quest">
+      <p class="ask">Fill in the blank: Wingardium____________</p>
+
+      <input type="radio" name="nine" value="a">
+      <label>Obliviate</label>
+
+      <input type="radio" name="nine" value="b">
+      <label>Leviosa</label>
+
+      <input type="radio" name="nine" value="c">
+      <label>Kedavra</label>
+
+      <input type="radio" name="nine" value="d">
+      <label>Alohomora</label>
+
+    </div>
+
+    <!-- question 10 -->
+
+    <div class="quest">
+      <p class="ask">What is Harry's position on the Quidditch team?</p>
+
+      <input type="radio" name="ten" value="a">
+      <label>Beater</label>
+
+      <input type="radio" name="ten" value="b">
+      <label>Keeper</label>
+
+      <input type="radio" name="ten" value="c">
+      <label>Seeker</label>
+
+      <input type="radio" name="ten" value="d">
+      <label>Chaser</label>
+
+    </div>
+    <button id="end" type="submit" class="btn btn-dark btn-lg">Send through owl post</button>
+  </form>
+
+  <div id="message" style="display:none">
+
+    <div id="scoreMessage">
+      <h3>Mischief Managed</h3>
+
+      <div id="correct">
+        <h3>Correct: </h3>
+      </div>
+
+      <div id="incorrect">
+        <h3>Incorrect: </h3>
+      </div>
+
+      <div id="unanswered">
+        <h3>Unanswered: </h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
