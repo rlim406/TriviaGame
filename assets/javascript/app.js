@@ -1,16 +1,27 @@
-$('#enter').click(function () {
-  $(this).parent().hide().next().show();
-});
+// $('#enter').click(function () {
+//   $(this).parent().hide().next().show();
+// });
 
-$('#end').click(function () {
-  $(this).parent().hide().next().show();
-});
-
+// $('#end').click(function () {
+//   $(this).parent().hide().next().show();
+// });
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unAnswered = 0;
 var number = 10;
 var intervalId;
+
+function startGame() {
+  $("#background").show();
+  $("#questions").hide();
+  $("#message").hide();
+}
+
+function startQuiz() {
+  $("#background").hide();
+  $("#questions").show();
+  $("#message").hide();
+}
 
 
 function unanswered() {
@@ -28,39 +39,42 @@ function correct() {
   $('#correct').html('<h3> Correct:' + correctAnswers + '</h3>');
 }
 
+function endQuiz() {
+  $("#background").hide();
+  $("#questions").hide();
+  $("#message").show();
+  // $('#unanswered').html('<h3> Unanswered:' + unAnswered + '</h3>');
+  // $('#correct').html('<h3> Correct:' + correctAnswers + '</h3>');
+  // $('#incorrect').html('<h3> Incorrect:' + incorrectAnswers + '</h3>');
+}
+
 function run() {
   clearInterval(intervalId);
   intervalId = setInterval(decrement, 1000);
 }
 
 function decrement() {
-
-  //  Decrease number by one.
   number--;
 
-  //  Show the number in the #show-number tag.
   $("#show-number").html("<h2>" + number + "</h2>");
 
-
-  //  Once number hits zero...
   if (number === 0) {
 
-    //  ...run the stop function.
     stop();
+    endQuiz();
   }
 };
 
 function stop() {
-
-  //  Clears our intervalId
-  //  We just pass the name of the interval
-  //  to the clearInterval function.
   clearInterval(intervalId);
-
 }
 
 
 $(document).ready(function () {
+
+  startGame();
+
+  $("#enter").on("click", startQuiz);
 
   $("#enter").on("click", run);
 
@@ -82,7 +96,10 @@ $(document).ready(function () {
       }
     });
   });
+  $("#end").on("click", endQuiz);
+
 });
+
 
 var answers = {
   "one": "c",
