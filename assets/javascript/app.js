@@ -59,10 +59,27 @@ function decrement() {
   $("#show-number").html("<h2>" + number + "</h2>");
 
   if (number === 0) {
-
+    timer();
     stop();
     endQuiz();
   }
+};
+
+function timer() {
+  $questions = $(".quest");
+  $questions.each(function () {
+    var answer = $(this).find("input:checked"),
+      key = answer.attr("name"),
+      val = answer.attr("value");
+
+    if (answer.length === 0) {
+      unanswered();
+    } else if (answers[key] !== val) {
+      incorrect();
+    } else {
+      correct();
+    }
+  });
 };
 
 function stop() {
