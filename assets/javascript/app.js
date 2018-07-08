@@ -105,7 +105,9 @@ $(document).ready(function () {
     });
   });
   $("#end").on("click", endQuiz);
+  $("#end").on("click", stop);
 });
+
 
 var answers = {
   "one": "c",
