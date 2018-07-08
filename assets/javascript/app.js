@@ -1,15 +1,10 @@
-// $('#enter').click(function () {
-//   $(this).parent().hide().next().show();
-// });
-
-// $('#end').click(function () {
-//   $(this).parent().hide().next().show();
-// });
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unAnswered = 0;
 var number = 10;
 var intervalId;
+var audio = new Audio("HP.mp3");
+
 
 function startGame() {
   $("#background").show();
@@ -43,9 +38,6 @@ function endQuiz() {
   $("#background").hide();
   $("#questions").hide();
   $("#message").show();
-  // $('#unanswered').html('<h3> Unanswered:' + unAnswered + '</h3>');
-  // $('#correct').html('<h3> Correct:' + correctAnswers + '</h3>');
-  // $('#incorrect').html('<h3> Incorrect:' + incorrectAnswers + '</h3>');
 }
 
 function run() {
@@ -86,7 +78,6 @@ function stop() {
   clearInterval(intervalId);
 }
 
-
 $(document).ready(function () {
 
   startGame();
@@ -114,9 +105,7 @@ $(document).ready(function () {
     });
   });
   $("#end").on("click", endQuiz);
-
 });
-
 
 var answers = {
   "one": "c",
