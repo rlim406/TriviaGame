@@ -4,12 +4,43 @@
   background-size: 1300px 700px;
 }
 
+#welcome{
+  margin-top: 15px;
+  color:black;
+  font-family: 'Tangerine', cursive;
+  font-size: 45px;
+  font-weight:800;
+}
+
 #questions{
   background:url("parchment.jpg")no-repeat center center fixed;
   background-size:cover;
   margin-left:0px;
-  
+  margin-top: 60px;
 }
+
+.quest, .ask, radio{
+  margin-left: 75px;
+}
+
+.ask{
+  font-family: 'Markazi Text', serif;
+  font-size: 30px;
+}
+
+label{
+  font-family: 'Lora', serif;
+  font-size: 18px;
+}
+
+nav, .navbar-name{
+  font-size: 30px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: bold; 
+  background-color:maroon;
+  color: goldenrod;
+}
+
 
 input,.ask{
   margin-left:25px;
@@ -22,29 +53,36 @@ background-size:cover;
 height: 662px;
 }
 
-form{
-  margin-left: 200px;
+#enter{
+  margin-top: 500px;
+  position: absolute;
+  margin-left:325px;
+  font-family: 'Tangerine', cursive;
+  font-size: 45px;
 }
 
-#enter{
-  margin-top: 550px;
-  position: absolute;
-  margin-left:370px;
-}
 
 #end{
   margin-left:550px;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
 }
 
 #scoreMessage{
   margin-left: 550px;
   color: black;
-  padding-top: 380px; 
+  padding-top: 325px; 
   font-size: 25px;
+  font-family: 'Sorts Mill Goudy', serif;
+  font-weight: bolder;
 }
 
 #mischief{
   margin-left:500px;
-  font-size: 40px;
   padding-top: 25px;
+  color:black;
+  font-family: 'Tangerine', cursive;
+  font-weight:800;
+  font-size: 80px;
+  
 }

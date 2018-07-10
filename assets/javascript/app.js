@@ -1,7 +1,7 @@
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unAnswered = 0;
-var number = 10;
+var number = 120;
 var intervalId;
 var audio = new Audio("HP.mp3");
 
@@ -9,12 +9,14 @@ var audio = new Audio("HP.mp3");
 function startGame() {
   $("#background").show();
   $("#questions").hide();
+  $("nav").hide();
   $("#message").hide();
 }
 
 function startQuiz() {
   $("#background").hide();
   $("#questions").show();
+  $("nav").show();
   $("#message").hide();
 }
 
@@ -37,6 +39,7 @@ function correct() {
 function endQuiz() {
   $("#background").hide();
   $("#questions").hide();
+  $("nav").hide();
   $("#message").show();
 }
 
@@ -48,7 +51,7 @@ function run() {
 function decrement() {
   number--;
 
-  $("#show-number").html("<h2>" + number + "</h2>");
+  $("#show-number").html("Time Remaining: " + number + "");
 
   if (number === 0) {
     timer();

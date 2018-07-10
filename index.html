@@ -7,25 +7,35 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Markazi+Text:600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 </head>
 
 <body id="main">
 
   <div id="background" class="container">
-    <h1>Harry Potter Quiz</h1>
+
+    <h2 id="welcome">Click below to begin the quiz!</h2>
 
     <button id="enter" type="button" class="btn btn-dark btn-lg">I solemly swear that I am up to no good</button>
+
   </div>
 
   <!-- question 1 -->
 
-  <form id="questions" style="display:none;">
-    <h1>Harry Potter Quiz</h1>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-maroon">
+    <div id="ch" class="container" style="width:960px">
+      <a class="navbar-name" href="#">Good Luck</a>
+      <div id="show-number">Time Remaining:</div>
+    </div>
+  </nav>
 
-    <div id="show-number"></div>
+  <form id="questions" style="display:none;">
 
     <div class="quest">
-      <p class="ask">Which of these is not a Hogwart's House?</p>
+      <p class="ask">1) Which of these is not a Hogwart's House?</p>
 
       <input type="radio" name="one" value="a">
       <label>Gryffindor</label>
@@ -46,7 +56,7 @@
     <!-- question 2 -->
 
     <div class="quest">
-      <p class="ask">True or False: According to the prophecy, Harry is considered to be 'The Chosen One'.</p>
+      <p class="ask">2) True or False: According to the prophecy, Harry is considered to be 'The Chosen One'.</p>
       <input type="radio" name="two" value="a">
       <label>True</label>
       <input type="radio" name="two" value="b">
@@ -57,14 +67,14 @@
     <!-- question 3 -->
 
     <div class="quest">
-      <p class="ask">How does a house elf get set free?</p>
+      <p class="ask">3) How does a house elf get set free?</p>
 
       <input type="radio" name="three" value="a">
       <label>When they manage to run away</label>
 
       <input type="radio" name="three" value="b">
       <label>Upon receiving an article of clothing from their master</label>
-
+      <br>
       <input type="radio" name="three" value="c">
       <label>By learning how to apparate to the land of the free house elves</label>
       <br>
@@ -77,7 +87,7 @@
     <!-- question 4 -->
 
     <div class="quest">
-      <p class="ask">How does Hermione get to all her classes during her third year at Hogwarts?</p>
+      <p class="ask">4) How does Hermione get to all her classes during her third year at Hogwarts?</p>
 
       <input type="radio" name="four" value="a">
       <label>Apparition</label>
@@ -96,7 +106,7 @@
     <!-- question 5 -->
 
     <div class="quest">
-      <p class="ask">Which of these is an unforgiveable curse?</p>
+      <p class="ask">5) Which of these is an unforgiveable curse?</p>
 
       <input type="radio" name="five" value="a">
       <label>Crucio</label>
@@ -115,7 +125,7 @@
     <!-- question 6 -->
 
     <div class="quest">
-      <p class="ask">How many points is a snitch worth in Quidditch?</p>
+      <p class="ask">6) How many points is a snitch worth in Quidditch?</p>
 
       <input type="radio" name="six" value="a">
       <label>200</label>
@@ -134,7 +144,7 @@
     <!-- question 7 -->
 
     <div class="quest">
-      <p class="ask">Ron's attempt to curse Malfoy backfired, which resulted in him...
+      <p class="ask">7) Ron's attempt to curse Malfoy backfired, which resulted in him...
       </p>
 
       <input type="radio" name="seven" value="a">
@@ -154,7 +164,7 @@
     <!-- question 8 -->
 
     <div class="quest">
-      <p class="ask">Harry is fluent in what other language?</p>
+      <p class="ask">8) Harry is fluent in what other language?</p>
 
       <input type="radio" name="eight" value="a">
       <label>Troll</label>
@@ -173,7 +183,7 @@
     <!-- question 9 -->
 
     <div class="quest">
-      <p class="ask">Fill in the blank: Wingardium____________</p>
+      <p class="ask">9) Fill in the blank: Wingardium____________</p>
 
       <input type="radio" name="nine" value="a">
       <label>Obliviate</label>
@@ -192,7 +202,7 @@
     <!-- question 10 -->
 
     <div class="quest">
-      <p class="ask">What is Harry's position on the Quidditch team?</p>
+      <p class="ask">10) What is Harry's position on the Quidditch team?</p>
 
       <input type="radio" name="ten" value="a">
       <label>Beater</label>
@@ -210,14 +220,14 @@
     <button id="end" type="submit" class="btn btn-dark btn-lg">Send through owl post</button>
   </form>
 
+
   <div id="message" style="display:none">
 
-    <h3 id="mischief">Mischief Managed</h3>
+    <p id="mischief">Mischief Managed</p>
 
     <div id="scoreMessage">
 
-      <h3 id="score">Final Quidditch Scores</h3>
-      <br>
+      <h3 id="score">Your Scores:</h3>
       <div id="correct">
         <h3>Correct: </h3>
       </div>
