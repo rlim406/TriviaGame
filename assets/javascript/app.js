@@ -23,17 +23,17 @@ function startQuiz() {
 
 function unanswered() {
   unAnswered++;
-  $('#unanswered').html('<h3> Unanswered:' + unAnswered + '</h3>');
+  $('#unanswered').html('<h3> Unanswered: ' + unAnswered + '</h3>');
 }
 
 function incorrect() {
   incorrectAnswers++
-  $('#incorrect').html('<h3> Incorrect:' + incorrectAnswers + '</h3>');
+  $('#incorrect').html('<h3> Incorrect: ' + incorrectAnswers + '</h3>');
 }
 
 function correct() {
   correctAnswers++;
-  $('#correct').html('<h3> Correct:' + correctAnswers + '</h3>');
+  $('#correct').html('<h3> Correct: ' + correctAnswers + '</h3>');
 }
 
 function endQuiz() {
