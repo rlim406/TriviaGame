@@ -2,7 +2,6 @@
   background: url('maurader\'s\ map.png') no-repeat center center fixed;
   background-size:cover;
   background-color:rgb(65, 6, 6);
-  background-size: 1300px 700px;
 }
 
 #welcome{
@@ -50,10 +49,10 @@ input,.ask{
 }
 
 #message{
-background:url("quidditch.jpg") no-repeat center center;
+background:url("quidditch.jpg")no-repeat center center fixed;
 background-color:rgb(65, 6, 6);
 background-size:cover;
-height: 662px;
+height: 100vh;
 }
 
 #enter{
@@ -64,8 +63,6 @@ height: 662px;
   font-size: 45px;
 }
 
-
-
 #end{
   position: relative;
   bottom:0;
@@ -74,23 +71,22 @@ height: 662px;
   font-size: 40px;
 }
 
-#scoreMessage{
-  position: absolute;
+ #scoreMessage{
+  position: absolute; 
   bottom:0;
-  left:45%;
+  left:45%; 
   color: black;
   font-size: 25px;
   font-family: 'Sorts Mill Goudy', serif;
   font-weight: bolder;
-
 }
 
 #mischief{
   position: absolute;
   top:5%;
-  left:40%;
+  left:40%; 
   color:black;
   font-family: 'Tangerine', cursive;
   font-weight:800;
   font-size: 80px;
-}
+} 
