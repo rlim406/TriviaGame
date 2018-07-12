@@ -6,8 +6,10 @@
 }
 
 #welcome{
-  margin-top: 15px;
-  color:black;
+  position: absolute;
+  top:5%;
+  left:7%;
+  color:white;
   font-family: 'Tangerine', cursive;
   font-size: 45px;
   font-weight:800;
