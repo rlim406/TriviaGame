@@ -3,7 +3,6 @@ var incorrectAnswers = 0;
 var unAnswered = 0;
 var number = 90;
 var intervalId;
-var audio = new Audio("HP.mp3");
 
 
 function startGame() {
